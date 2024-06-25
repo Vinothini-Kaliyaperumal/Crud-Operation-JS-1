@@ -1,0 +1,105 @@
+body{
+    background: #dde4ed;
+  }
+  h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    word-spacing: 0.6rem
+  }
+  
+  .container{
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    margin-top: 30px;
+    color: #F0F8FF;
+    background-color: #404c59;
+    padding: 40px;
+    padding-bottom: 110px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    font-family: 'Roboto';
+  }
+  .container:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .form {
+    margin: 10px auto;
+    text-align: center;
+  }
+  .label1{
+    margin-left: 120px;
+    color: #F0F8FF;
+   
+  }
+  .label2{
+    margin-left: 120px;
+    color: #F0F8FF;
+    /* margin-bottom: 70px; */
+  }
+  .input{
+  
+    display: flex;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border:none;
+    border-radius: 10px;
+    padding: 12px;
+    width: 200px;
+    background-color: #ccc;
+  }
+  #error1{
+    margin-top: -8px;
+    margin-left: 40px;
+  }
+  #error2{
+    margin-top: -8px;
+    margin-left: 40px;
+  }
+  .btn{
+    margin-top: 45px;
+  }
+  .button{
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #404c59;
+    margin-top: 10px;
+    margin-left: 100px;
+    background-color: #ccc;
+  }
+  .button:hover{
+    color: white;
+    background-color: #404c59;
+    border: white 2.2px solid;
+    height: 40px;
+    width: 105px;
+    cursor: pointer;
+  }
+  /* a {
+    text-decoration: none;
+    color: inherit;
+  } */
+  ::placeholder{
+    letter-spacing: 0.1em;
+  }
+
+  .tab{
+    margin-left: 630px;
+    margin-top: 50px;
+    padding-top: 30px;
+    /* width: 10px; */
+  }
+  .team{
+    padding-top: 80px;
+  }
