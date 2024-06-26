@@ -86,20 +86,37 @@ body{
     width: 105px;
     cursor: pointer;
   }
-  /* a {
-    text-decoration: none;
-    color: inherit;
-  } */
+  
   ::placeholder{
     letter-spacing: 0.1em;
   }
 
   .tab{
-    margin-left: 630px;
-    margin-top: 50px;
-    padding-top: 30px;
-    /* width: 10px; */
+    margin-left: 570px;
+    margin-top: 40px;
+   
   }
   .team{
-    padding-top: 80px;
+    height:35px;
+    text-align: center;
+    background-color: #949597;
+    /* border-radius: 20px; */
+  }  
+  
+  table {
+    border-collapse: collapse;
+    width: 15%;
+    height: 30px;
+    text-align: center;
+    padding: 35px;
+    border: 1px solid;
+    border-radius: 20px;
   }
+  th, td {
+    padding: 10px;
+     border: 1px solid;
+  }
+  
+ 
+  
+  

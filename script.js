@@ -11,15 +11,19 @@ function login() {
     if (name === "") {
         errorMessage = 'Name is required!';
         error1.textContent = errorMessage;
+    }else {
+        error1.textContent = '';
     }
 
     if (age === "") {
         errorMessage = 'Age is required!';
         error2.textContent = errorMessage;
+    }else {
+        error2.textContent = '';
     }
 
     if (errorMessage) {
-        return;
+        return ;
     }
 
     const entry = { name, age };
@@ -29,20 +33,8 @@ function login() {
     document.getElementById('age').value = '';
     console.log(data);
     updateTable();
+    
 }
-
-// function updateTable(){
-//     let tabledata = data.map((item) => {
-//         return`<tr>
-//         <td>${item.name}</td>
-//        <td>${item.age}</td>
-//        </tr> `
-//     }).join('');
-
-//     document.getElementById("table-body").innerHTML = tabledata;
-// }
-
-
 
 function updateTable(){
    let k = ''
@@ -54,6 +46,8 @@ function updateTable(){
    })
    document.getElementById("table-body").innerHTML = k;
 }
+
+
 
 
 
