@@ -42,6 +42,10 @@ function updateTable(){
     k += "<tr>"
     k += "<td>" + item.name + "</td>"
     k += "<td>" + item.age + "</td>"
+    // k +=
+    //   '<td> <button type="button" class="btn btn-primary" onclick= "edit()">Edit</button>   <button type="button" class="btn btn-danger" onclick= "Delete(' +
+    //   i +
+    //   ')">Delete</button></td>';
     k += "</tr>";
    })
    document.getElementById("table-body").innerHTML = k;
