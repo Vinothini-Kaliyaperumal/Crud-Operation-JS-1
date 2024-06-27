@@ -1,4 +1,5 @@
 let data = [];
+let editIndex;
 
 function login() {
     const name = document.getElementById('name').value.trim();
@@ -27,7 +28,13 @@ function login() {
     }
 
     const entry = { name, age };
+
+    if(editIndex >= 0){
+        data[editIndex] = entry;
+        // editIndex = -1;
+    } else{
     data.push(entry);
+    }
 
     document.getElementById('name').value = '';
     document.getElementById('age').value = '';
@@ -37,28 +44,34 @@ function login() {
 }
 
 function updateTable(){
-   let k = ''
-   data.map((item) =>{
-    k += "<tr>"
-    k += "<td>" + item.name + "</td>"
-    k += "<td>" + item.age + "</td>"
-    // k +=
-    //   '<td> <button type="button" class="btn btn-primary" onclick= "edit()">Edit</button>   <button type="button" class="btn btn-danger" onclick= "Delete(' +
-    //   i +
-    //   ')">Delete</button></td>';
+   let k = '';
+   data.forEach((item,index) =>{
+    k += "<tr>";
+    k += "<td>" + item.name + "</td>";
+    k += "<td>" + item.age + "</td>";
+    k += '<td><button type="button" class="et" onclick="edit(' + index + ')">Edit</button> <button type="button" class="de" onclick="deleteEntry(' + index + ')">Delete</button></td>';
     k += "</tr>";
    })
    document.getElementById("table-body").innerHTML = k;
 }
 
+function edit(index) {
+    const entry = data[index];
+    document.getElementById('name').value = entry.name;
+    document.getElementById('age').value = entry.age;
+    editIndex = index;
+  }
 
-
-
-
-
-
-
-
+  function deleteEntry(index){
+    data = data.filter((entry, v) => v !== index);
+    updateTable();
+  }
+  
+//   delete splice method 
+//   function deleteEntry(index) {
+//     data.splice(index, 1);
+//     updateTable();
+//   }
 
 
 

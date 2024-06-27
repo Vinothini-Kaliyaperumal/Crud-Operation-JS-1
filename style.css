@@ -1,4 +1,4 @@
-body{
+  body{
     background: #dde4ed;
   }
   h1{
@@ -7,14 +7,15 @@ body{
     font-weight: 500;
     font-size: 30px;
     letter-spacing: 0.5px;
-    word-spacing: 0.6rem
+    word-spacing: 0.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .container{
     width: 300px;
     height: 300px;
     margin: 10px auto;
-    margin-top: 30px;
+    margin-top: 20px;
     color: #F0F8FF;
     background-color: #404c59;
     padding: 40px;
@@ -34,11 +35,17 @@ body{
   .label1{
     margin-left: 120px;
     color: #F0F8FF;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: #71adaa; */
+    /* color: white; */
    
   }
   .label2{
     margin-left: 120px;
     color: #F0F8FF;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     /* margin-bottom: 70px; */
   }
   .input{
@@ -76,7 +83,7 @@ body{
     color: #404c59;
     margin-top: 10px;
     margin-left: 100px;
-    background-color: #ccc;
+    background-color: #71adaa;
   }
   .button:hover{
     color: white;
@@ -92,8 +99,8 @@ body{
   }
 
   .tab{
-    margin-left: 570px;
-    margin-top: 40px;
+    margin-left: 560px;
+    margin-top: 30px;
    
   }
   .team{
@@ -105,7 +112,7 @@ body{
   
   table {
     border-collapse: collapse;
-    width: 15%;
+    /* width: 15%; */
     height: 30px;
     text-align: center;
     padding: 35px;
@@ -116,7 +123,25 @@ body{
     padding: 10px;
      border: 1px solid;
   }
-  
- 
-  
+
+  .et{
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(73, 145, 73);
+    color: white;
+    border-radius: 7px;
+    /* display: flex; */
+  }
+  .de{
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(216, 88, 88);
+    color: white;
+    border-radius: 7px;
+  }
+
   
