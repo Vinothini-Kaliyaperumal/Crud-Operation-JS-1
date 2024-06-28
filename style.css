@@ -104,11 +104,15 @@
    
   }
   .team{
+    font-weight: bold;
     height:35px;
     text-align: center;
     background-color: #949597;
     /* border-radius: 20px; */
   }  
+  .team:hover{
+    background-color: #71adaa;
+  }
   
   table {
     border-collapse: collapse;
@@ -124,7 +128,7 @@
      border: 1px solid;
   }
 
-  .et{
+  #et{
     margin-top: 5px;
     padding: 5px;
     padding-left: 10px;
@@ -134,7 +138,7 @@
     border-radius: 7px;
     /* display: flex; */
   }
-  .de{
+  #de{
     margin-top: 5px;
     padding: 5px;
     padding-left: 10px;
@@ -145,3 +149,5 @@
   }
 
   
+
+ 
